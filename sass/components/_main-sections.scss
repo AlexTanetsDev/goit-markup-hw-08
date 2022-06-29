@@ -1,21 +1,21 @@
 .features-section {
   padding-bottom: 0;
 }
-.features-list {
-  display: flex;
-}
-.features-list__item {
-  max-width: 270px;
-  & + .features-list__item {
-    margin-left: 30px;
-  }
-}
+// .features-list {
+//   display: flex;
+// }
+// .features-list__item {
+//   max-width: 270px;
+//   & + .features-list__item {
+//     margin-left: 30px;
+//   }
+// }
 .features-list__title {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: $title-color;
+  color: var(--main-title-color);
   margin-bottom: 10px;
 }
 .features-list__text {
@@ -41,19 +41,19 @@
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-  color: $title-color;
+  color: var(--main-title-color);
   margin-bottom: 50px;
 }
 
-.products-list {
-  display: flex;
-}
+// .products-list {
+//   display: flex;
+// }
 
-.products-list__item {
-  & + .products-list__item {
-    margin-left: 30px;
-  }
-}
+// .products-list__item {
+//   & + .products-list__item {
+//     margin-left: 30px;
+//   }
+// }
 
 .product {
   position: relative;
@@ -82,7 +82,7 @@
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: $white-color;
+  color: var(--main-white-color);
 }
 
 // team-section
@@ -91,18 +91,18 @@
   background: #f5f4fa;
 }
 
-.team-list {
-  display: flex;
-}
+// .team-list {
+//   display: flex;
+// }
 
-.team-list__item {
-  & + .team-list__item {
-    margin-left: 30px;
-  }
-}
+// .team-list__item {
+//   & + .team-list__item {
+//     margin-left: 30px;
+//   }
+// }
 
 .team-card {
-  background-color: $white-color;
+  background-color: var(--main-white-color);
   text-align: center;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -123,7 +123,7 @@
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: $title-color;
+  color: var(--main-title-color);
   margin-bottom: 10px;
 }
 
@@ -135,15 +135,15 @@
 
 // clients-section
 
-.clients-list {
-  display: flex;
-}
+// .clients-list {
+//   display: flex;
+// }
 
-.clients-list__item {
-  & + .clients-list__item {
-    margin-left: 30px;
-  }
-}
+// .clients-list__item {
+//   & + .clients-list__item {
+//     margin-left: 30px;
+//   }
+// }
 
 .clients-list__link {
   width: 170px;
@@ -162,8 +162,8 @@
 
   &:hover,
   &:focus {
-    border: 1px solid $accent-color;
-    color: $accent-color;
+    border: 1px solid var(--main-accent-color);
+    color: var(--main-accent-color);
   }
 }
 

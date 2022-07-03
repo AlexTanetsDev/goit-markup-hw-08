@@ -1,5 +1,7 @@
 .features-section {
-  padding-bottom: 0;
+  @media screen and (max-width: 768px) {
+    padding: 60px 0;
+  }
 }
 // .features-list {
 //   display: flex;
@@ -17,12 +19,21 @@
   text-transform: uppercase;
   color: var(--main-title-color);
   margin-bottom: 10px;
+
+  @media screen and (max-width: 768px) {
+    text-align: center;
+  }
 }
 .features-list__text {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
 
+.features-list__item:not(:last-child) {
+  @media screen and (max-width: 768px) {
+    margin-bottom: 30px;
+  }
+}
 .icon-container {
   background: #f5f4fa;
   border-radius: 4px;
@@ -35,6 +46,12 @@
 }
 
 // product-section
+
+.products-section {
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
 
 .section__title {
   font-size: 36px;
@@ -89,6 +106,9 @@
 
 .team-section {
   background: #f5f4fa;
+  @media screen and (max-width: 768px) {
+    padding: 60px 0;
+  }
 }
 
 // .team-list {
@@ -101,6 +121,11 @@
 //   }
 // }
 
+.team-list__item:not(:last-child) {
+  @media screen and (max-width: 768px) {
+    margin-bottom: 30px;
+  }
+}
 .team-card {
   background-color: var(--main-white-color);
   text-align: center;

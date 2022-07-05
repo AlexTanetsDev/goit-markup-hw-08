@@ -1,24 +1,21 @@
 .page-footer {
   background-color: #2f303a;
-  // padding-top: 60px;
-  // padding-bottom: 60px;
 }
-// .page-footer__container {
-//   // display: flex;
-//   align-items: baseline;
-// }
+.page-footer__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
-// .adress-cotain {
-//   margin-right: 70px;
-// }
+.adress-cotain {
+  text-align: center;
+}
 
 .adress {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--main-white-color);
   font-style: normal;
-  //   display: flex;
-  //   flex-direction: column;
 }
 .adress__link {
   line-height: 1.71;
@@ -36,9 +33,9 @@
   }
 }
 
-// .join-box {
-//   margin-right: 93px;
-// }
+.join-box {
+  text-align: center;
+}
 .join-box__title {
   font-size: 14px;
   line-height: 1.14;
@@ -83,6 +80,10 @@
   fill: var(--main-white-color);
 }
 
+.form-group {
+  text-align: center;
+}
+
 .subscribe-form__title {
   display: block;
   margin-bottom: 20px;
@@ -93,8 +94,7 @@
   color: var(--main-white-color);
 }
 .subscribe-form__imput {
-  margin-right: 12px;
-  width: 358px;
+  width: 100%;
   height: 50px;
   display: inline-flex;
   align-items: center;

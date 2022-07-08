@@ -139,6 +139,10 @@ body.is-open {
   }
 }
 
+.page-header__container {
+  position: relative;
+}
+
 .contacts {
   margin-left: auto;
 }
@@ -444,9 +448,7 @@ body.is-open {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  gap: 60px;
 }
 @media screen and (max-width: 768px) {
   .page-footer__container {
@@ -473,7 +475,7 @@ body.is-open {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   display: block;
-  margin-top: 9px;
+  margin-top: 8px;
   padding: 0;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -500,10 +502,10 @@ body.is-open {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.join-list__item + .join-list__item {
-  margin-left: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
 }
 
 .join-list__link {
@@ -555,6 +557,7 @@ body.is-open {
       -ms-flex-align: center;
           align-items: center;
   padding-left: 16px;
+  margin-bottom: 20px;
   color: var(--main-white-color);
   font-size: 16px;
   line-height: 1.25;
@@ -623,13 +626,18 @@ body.is-open {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
   -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  padding: 93px 15px 94px 15px;
+  padding: 40px 15px 40px 15px;
+}
+@media screen and (min-width: 480px) {
+  .backdrop {
+    padding: 90px 15px 90px 15px;
+  }
 }
 
 .is-hidden {
@@ -649,17 +657,12 @@ body.is-open {
 }
 
 .modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
   overflow-y: scroll;
   padding: 40px;
   background-color: var(--main-white-color);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  -webkit-transform: translate(-50%, -50%) scale(1);
-          transform: translate(-50%, -50%) scale(1);
   opacity: 1;
   -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -824,7 +827,7 @@ body.is-open {
 
 .request-privacy__icon {
   position: relative;
-  top: -2px;
+  top: 2px;
   opacity: 1;
   width: 16px;
   height: 15px;
@@ -981,8 +984,8 @@ body.is-open {
 
 .menu-button {
   position: absolute;
-  top: 10px;
-  right: 15px;
+  top: -5px;
+  right: 0;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;

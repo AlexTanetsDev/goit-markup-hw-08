@@ -133,7 +133,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .page-header {
     height: 60px;
     padding: 16px 0;
@@ -145,9 +145,17 @@ body {
 }
 
 .contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
   margin-left: auto;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .contacts {
     display: none;
   }
@@ -171,7 +179,13 @@ body {
   fill: currentColor;
 }
 
-@media screen and (max-width: 768px) {
+.site-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 50px;
+}
+@media screen and (max-width: 767px) {
   .site-nav {
     display: none;
   }
@@ -182,11 +196,28 @@ body {
   letter-spacing: 0.02em;
   font-weight: 500;
   color: var(--main-title-color);
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .site-nav__link:hover, .site-nav__link:focus {
   color: var(--main-accent-color);
+}
+
+.site-nav__link--active {
+  position: relative;
+}
+.site-nav__link--active::after {
+  position: absolute;
+  bottom: -1px;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--main-accent-color);
 }
 
 .hero-section {
@@ -200,6 +231,13 @@ body {
   text-align: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+@media screen and (min-width: 768px) {
+  .hero-section {
+    max-width: 768px;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/Header-tablet-\ img\ .jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Header-tablet-\ img\ .jpg);
+  }
 }
 
 .hero-section__title {
@@ -231,6 +269,12 @@ body {
   gap: 30px;
 }
 
+@media screen and (min-width: 768px) {
+  .features-list__item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+
 .features-list__title {
   font-size: 14px;
   line-height: 1.14;
@@ -239,7 +283,7 @@ body {
   color: var(--main-title-color);
   margin-bottom: 10px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .features-list__title {
     text-align: center;
   }
@@ -266,7 +310,7 @@ body {
           align-items: center;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1190px) {
   .products-section {
     display: none;
   }
@@ -311,11 +355,6 @@ body {
 .team-section {
   background: #f5f4fa;
 }
-@media screen and (max-width: 768px) {
-  .team-section {
-    padding: 60px 0;
-  }
-}
 
 .team-list {
   display: -webkit-box;
@@ -324,6 +363,12 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .team-list__item {
+    width: calc((100% - 30px) / 2);
+  }
 }
 
 .team-card {
@@ -371,6 +416,11 @@ body {
 .clients-list__item {
   height: 92px;
   width: calc((100% - 30px) / 2);
+}
+@media screen and (min-width: 768px) {
+  .clients-list__item {
+    width: calc((100% - 60px) / 3);
+  }
 }
 
 .clients-list__link {
@@ -454,12 +504,21 @@ body {
       flex-wrap: wrap;
   gap: 60px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .page-footer__container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+}
+@media screen and (min-width: 768px) {
+  .page-footer__container {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
 }
 
@@ -953,6 +1012,7 @@ body {
 
 .porfolio-card__image {
   display: block;
+  max-width: 100%;
 }
 
 .portfolio-card__thumb {

@@ -209,7 +209,11 @@
               <div class="product">
                 <img
                   class="product__image"
-                  src="./images/img-(1).jpg"
+                  srcset="
+                    ./images/product_1.jpg    1x,
+                    ./images/product_1@x2.jpg 2x
+                  "
+                  src="./images/product_1.jpg"
                   alt="разработка програмного обеспечения"
                   width="370"
                 />
@@ -222,7 +226,11 @@
               <div class="product">
                 <img
                   class="product__image"
-                  src="./images/img-0.jpg"
+                  srcset="
+                    ./images/product_2.jpg    1x,
+                    ./images/product_2@x2.jpg 2x
+                  "
+                  src="./images/product_2.jpg"
                   alt="демонстрация мобильного приложения"
                   width="370"
                 />
@@ -235,7 +243,11 @@
               <div class="product">
                 <img
                   class="product__image"
-                  src="./images/img-(2).jpg"
+                  srcset="
+                    ./images/product_3.jpg    1x,
+                    ./images/product_3@x2.jpg 2x
+                  "
+                  src="./images/product_3.jpg"
                   alt="демонстрация графического решения"
                 />
                 <div class="product__overlay">
@@ -255,7 +267,16 @@
             <li class="team-list__item">
               <div class="team-card">
                 <img
-                  src="./images/img-(3).jpg"
+                  srcset="
+                    ./images/team-desk_1.jpg      270w,
+                    ./images/team-tablet_1.jpg    354w,
+                    ./images/team-mob_1.jpg       450w,
+                    ./images/team-desk_1@x2.jpg   540w,
+                    ./images/team-tablet_1@x2.jpg 708w,
+                    ./images/team-mob_1@x2.jpg    900w
+                  "
+                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 450px"
+                  src="./images/team-desk_1.jpg"
                   alt="фото дизайнера"
                   class="team-card__image"
                 />
@@ -299,7 +320,16 @@
             <li class="team-list__item">
               <div class="team-card">
                 <img
-                  src="./images/img-(4).jpg"
+                  srcset="
+                    ./images/team-desk_2.jpg      270w,
+                    ./images/team-tablet_2.jpg    354w,
+                    ./images/team-mob_2.jpg       450w,
+                    ./images/team-desk_2@x2.jpg   540w,
+                    ./images/team-tablet_2@x2.jpg 708w,
+                    ./images/team-mob_2@x2.jpg    900w
+                  "
+                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 450px"
+                  src="./images/team-desk_2.jpg"
                   alt="фото дизайнера"
                   class="team-card__image"
                 />
@@ -343,7 +373,16 @@
             <li class="team-list__item">
               <div class="team-card">
                 <img
-                  src="./images/img-(5).jpg"
+                  srcset="
+                    ./images/team-desk_3.jpg      270w,
+                    ./images/team-tablet_3.jpg    354w,
+                    ./images/team-mob_3.jpg       450w,
+                    ./images/team-desk_3@x2.jpg   540w,
+                    ./images/team-tablet_3@x2.jpg 708w,
+                    ./images/team-mob_3@x2.jpg    900w
+                  "
+                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 450px"
+                  src="./images/team-desk_3.jpg"
                   alt="фото дизайнера"
                   class="team-card__image"
                 />
@@ -387,7 +426,16 @@
             <li class="team-list__item">
               <div class="team-card">
                 <img
-                  src="./images/img-(6).jpg"
+                  srcset="
+                    ./images/team-desk_4.jpg      270w,
+                    ./images/team-tablet_4.jpg    354w,
+                    ./images/team-mob_4.jpg       450w,
+                    ./images/team-desk_4@x2.jpg   540w,
+                    ./images/team-tablet_4@x2.jpg 708w,
+                    ./images/team-mob_4@x2.jpg    900w
+                  "
+                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 450px"
+                  src="./images/team-desk_4.jpg"
                   alt="фото дизайнера"
                   class="team-card__image"
                 />
@@ -531,7 +579,7 @@
           </ul>
         </div>
         <div class="form-group" role="group" aria-labelledby="subscribe-form">
-          <form name="subscribe-form">
+          <form name="subscribe-form" class="subscribe-form">
             <b class="subscribe-form__title">Подпишитесь на рассылку</b>
             <input
               class="subscribe-form__imput"

@@ -8,11 +8,23 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/Header\ img.jpg);
+    url(../images/hero-mob.jpg);
   background-color: #2f303a;
   text-align: center;
   background-size: cover;
   background-repeat: no-repeat;
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero-mob@x2.jpg);
+  }
 
   @media screen and (min-width: 768px) {
     max-width: 768px;
@@ -21,7 +33,41 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../images/Header-tablet-\ img\ .jpg);
+      url(../images/hero-tablet.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../../images/hero-tablet@2x\ .jpg);
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1600px;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero-desk.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/hero-desk@x2.jpg);
+    }
   }
 }
 .hero-section__title {
@@ -32,10 +78,6 @@
 
   text-align: center;
 
-  // font-size: 44px;
-  // line-height: 1.36;
-  // max-width: 696px;
-
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
@@ -43,4 +85,10 @@
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    line-height: 1.36;
+    max-width: 696px;
+  }
 }

@@ -13,6 +13,10 @@
   @media screen and (min-width: 768px) {
     width: calc((100% - 30px) / 2);
   }
+
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 90px) / 4);
+  }
 }
 .features-list__title {
   font-size: 14px;
@@ -29,6 +33,7 @@
 .features-list__text {
   line-height: 1.71;
   letter-spacing: 0.03em;
+  color: var(--main-text-color);
 }
 
 .icon-container {
@@ -45,9 +50,11 @@
 // product-section
 
 .products-section {
-  @media screen and (max-width: 1190px) {
+  @media screen and (max-width: 1199px) {
     display: none;
   }
+
+  padding-top: 0;
 }
 
 .section__title {
@@ -59,20 +66,17 @@
 
   margin-bottom: 30px;
 
-  // font-size: 36px;
-  // line-height: 1.17;
-  // margin-bottom: 50px;
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    line-height: 1.17;
+    margin-bottom: 50px;
+  }
 }
 
-// .products-list {
-//   display: flex;
-// }
-
-// .products-list__item {
-//   & + .products-list__item {
-//     margin-left: 30px;
-//   }
-// }
+.products-list {
+  display: flex;
+  gap: 30px;
+}
 
 .product {
   position: relative;
@@ -120,6 +124,10 @@
   @media screen and (min-width: 768px) {
     width: calc((100% - 30px) / 2);
   }
+
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 90px) / 4);
+  }
 }
 
 .team-card {
@@ -153,6 +161,8 @@
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+
+  color: var(--main-text-color);
 }
 
 // clients-section
@@ -169,6 +179,10 @@
 
   @media screen and (min-width: 768px) {
     width: calc((100% - 60px) / 3);
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 150px) / 6);
   }
 }
 

@@ -1,11 +1,15 @@
 .page-footer {
   background-color: #2f303a;
+
+  @media screen and (min-width: 1200px) {
+    padding: 60px 0;
+  }
 }
 .page-footer__container {
   display: flex;
   flex-wrap: wrap;
 
-  gap: 60px;
+  row-gap: 60px;
   @media screen and (max-width: 767px) {
     flex-direction: column;
   }
@@ -13,10 +17,20 @@
     justify-content: space-around;
     align-items: baseline;
   }
+  @media screen and (min-width: 1200px) {
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+  }
 }
 
 .adress-cotain {
-  text-align: center;
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+  }
 }
 
 .adress {
@@ -42,7 +56,13 @@
 }
 
 .join-box {
-  text-align: center;
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+  }
 }
 .join-box__title {
   font-size: 14px;
@@ -87,11 +107,23 @@
 }
 
 .form-group {
-  text-align: center;
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
+}
+
+.subscribe-form {
+  display: flex;
+  flex-wrap: wrap;
+
+  @media screen and (max-width: 1199px) {
+    justify-content: center;
+  }
 }
 
 .subscribe-form__title {
   display: block;
+  width: 100%;
   margin-bottom: 20px;
 
   line-height: 1.14;
@@ -101,6 +133,7 @@
 }
 .subscribe-form__imput {
   width: 100%;
+  max-width: 450px;
   height: 50px;
   display: inline-flex;
   align-items: center;
@@ -131,6 +164,12 @@
   }
   &:focus {
     outline: 1px solid var(--main-white-color);
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 357px;
+    margin-right: 12px;
+    margin-bottom: 0;
   }
 }
 .subscribe-button {

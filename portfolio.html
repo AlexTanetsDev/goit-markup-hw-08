@@ -97,14 +97,14 @@
         <nav>
           <ul class="list site-nav">
             <li class="site-nav__item">
-              <a
-                href="./index.html"
-                class="site-nav__link site-nav__link--active"
-                >Студия</a
-              >
+              <a href="./index.html" class="site-nav__link">Студия</a>
             </li>
             <li class="site-nav__item">
-              <a href="./portfolio.html" class="site-nav__link">Портфолио</a>
+              <a
+                href="./portfolio.html"
+                class="site-nav__link site-nav__link--active"
+                >Портфолио</a
+              >
             </li>
             <li class="site-nav__item">
               <a href="" class="site-nav__link">Контакты</a>
@@ -169,7 +169,16 @@
               <div class="portfolio-card">
                 <div class="portfolio-card__thumb">
                   <img
-                    src="./images/Portfolio-mob.jpg"
+                    srcset="
+                      ./images/portf-tablet_1.jpg    354w,
+                      ./images/portf-desk_1.jpg      370w,
+                      ./images/portf-mob_1.jpg       450w,
+                      ./images/portf-tablet_1@x2.jpg 708w,
+                      ./images/portf-desk_1@x2.jpg   740w,
+                      ./images/portf-mob_1@x2.jpg    900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 450px"
+                    src="./images/portf-desk_1.jpg"
                     alt="Картинка веб-сайта"
                     class="porfolio-card__image"
                   />
@@ -183,7 +192,7 @@
                   </div>
                 </div>
 
-                <div class="content-in-border">
+                <div class="content-in-border content-in-border--aligment">
                   <h2 class="portfolio-card__title">Технокряк</h2>
                   <p class="portfolio-card__text">Веб-сайт</p>
                 </div>
@@ -193,7 +202,16 @@
               <div class="portfolio-card">
                 <div class="portfolio-card__thumb">
                   <img
-                    src="./images/portf-2.jpg"
+                    srcset="
+                      ./images/portf-tablet_2.jpg    354w,
+                      ./images/portf-desk_2.jpg      370w,
+                      ./images/portf-mob_2.jpg       450w,
+                      ./images/portf-tablet_2@x2.jpg 708w,
+                      ./images/portf-desk_2@x2.jpg   740w,
+                      ./images/portf-mob_2@x2.jpg    900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 450px"
+                    src="./images/portf-desk_2.jpg"
                     alt="Постер с игрой в баскетбол"
                     class="porfolio-card__image"
                   />
@@ -219,7 +237,16 @@
               <div class="portfolio-card">
                 <div class="portfolio-card__thumb">
                   <img
-                    src="./images/portf-3.jpg"
+                    srcset="
+                      ./images/portf-tablet_3.jpg    354w,
+                      ./images/portf-desk_3.jpg      370w,
+                      ./images/portf-mob_3.jpg       450w,
+                      ./images/portf-tablet_3@x2.jpg 708w,
+                      ./images/portf-desk_3@x2.jpg   740w,
+                      ./images/portf-mob_3@x2.jpg    900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 450px"
+                    src="./images/portf-desk_3.jpg"
                     alt="Логотип ресторана"
                     class="porfolio-card__image"
                   />
@@ -243,7 +270,16 @@
               <div class="portfolio-card">
                 <div class="portfolio-card__thumb">
                   <img
-                    src="./images/portf-4.jpg"
+                    srcset="
+                      ./images/portf-tablet_4.jpg    354w,
+                      ./images/portf-desk_4.jpg      370w,
+                      ./images/portf-mob_4.jpg       450w,
+                      ./images/portf-tablet_4@x2.jpg 708w,
+                      ./images/portf-desk_4@x2.jpg   740w,
+                      ./images/portf-mob_4@x2.jpg    900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 450px"
+                    src="./images/portf-desk_4.jpg"
                     alt="Картинка наушников"
                     class="porfolio-card__image"
                   />
@@ -267,7 +303,16 @@
               <div class="portfolio-card">
                 <div class="portfolio-card__thumb">
                   <img
-                    src="./images/portf-5.jpg"
+                    srcset="
+                      ./images/portf-tablet_5.jpg    354w,
+                      ./images/portf-desk_5.jpg      370w,
+                      ./images/portf-mob_5.jpg       450w,
+                      ./images/portf-tablet_5@x2.jpg 708w,
+                      ./images/portf-desk_5@x2.jpg   740w,
+                      ./images/portf-mob_5@x2.jpg    900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 450px"
+                    src="./images/portf-desk_5.jpg"
                     alt="Изображение коробочек"
                     class="porfolio-card__image"
                   />
@@ -291,7 +336,16 @@
               <div class="portfolio-card">
                 <div class="portfolio-card__thumb">
                   <img
-                    src="./images/portf-6.jpg"
+                    srcset="
+                      ./images/portf-tablet_6.jpg    354w,
+                      ./images/portf-desk_6.jpg      370w,
+                      ./images/portf-mob_6.jpg       450w,
+                      ./images/portf-tablet_6@x2.jpg 708w,
+                      ./images/portf-desk_6@x2.jpg   740w,
+                      ./images/portf-mob_6@x2.jpg    900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 450px"
+                    src="./images/portf-desk_6.jpg"
                     alt="Картинка веб-сайта"
                     class="porfolio-card__image"
                   />
@@ -317,7 +371,16 @@
               <div class="portfolio-card">
                 <div class="portfolio-card__thumb">
                   <img
-                    src="./images/portf-7.jpg"
+                    srcset="
+                      ./images/portf-tablet_7.jpg    354w,
+                      ./images/portf-desk_7.jpg      370w,
+                      ./images/portf-mob_7.jpg       450w,
+                      ./images/portf-tablet_7@x2.jpg 708w,
+                      ./images/portf-desk_7@x2.jpg   740w,
+                      ./images/portf-mob_7@x2.jpg    900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 450px"
+                    src="./images/portf-desk_7.jpg"
                     alt="Изображение журнала"
                     class="porfolio-card__image"
                   />
@@ -341,7 +404,16 @@
               <div class="portfolio-card">
                 <div class="portfolio-card__thumb">
                   <img
-                    src="./images/portf-8.jpg"
+                    srcset="
+                      ./images/portf-tablet_8.jpg    354w,
+                      ./images/portf-desk_8.jpg      370w,
+                      ./images/portf-mob_8.jpg       450w,
+                      ./images/portf-tablet_8@x2.jpg 708w,
+                      ./images/portf-desk_8@x2.jpg   740w,
+                      ./images/portf-mob_8@x2.jpg    900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 450px"
+                    src="./images/portf-desk_8.jpg"
                     alt="Изображение ярлыка"
                     class="porfolio-card__image"
                   />
@@ -365,7 +437,16 @@
               <div class="portfolio-card">
                 <div class="portfolio-card__thumb">
                   <img
-                    src="./images/portf-9.jpg"
+                    srcset="
+                      ./images/portf-tablet_9.jpg    354w,
+                      ./images/portf-desk_9.jpg      370w,
+                      ./images/portf-mob_9.jpg       450w,
+                      ./images/portf-tablet_9@x2.jpg 708w,
+                      ./images/portf-desk_9@x2.jpg   740w,
+                      ./images/portf-mob_9@x2.jpg    900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 450px"
+                    src="./images/portf-desk_9.jpg"
                     alt="Изображение ноутбука"
                     class="porfolio-card__image"
                   />
@@ -439,7 +520,7 @@
           </ul>
         </div>
         <div class="form-group" role="group" aria-labelledby="subscribe-form">
-          <form name="subscribe-form">
+          <form name="subscribe-form" class="subscribe-form">
             <b class="subscribe-form__title">Подпишитесь на рассылку</b>
             <input
               class="subscribe-form__imput"

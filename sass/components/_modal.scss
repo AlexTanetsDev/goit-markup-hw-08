@@ -181,31 +181,41 @@
   display: flex;
   align-items: center;
 
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
 
   margin-bottom: 30px;
-  margin-left: 12px;
 
   cursor: pointer;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .request-privacy__input:checked {
-  ~ .request-privacy__icon {
-    opacity: 0;
-  }
-  ~ .request-privacy__checked {
-    opacity: 1;
+  ~ .checked-icon-container {
+    svg {
+      .request-privacy__icon {
+        opacity: 0;
+      }
+      .checkbox-checked-icon {
+        opacity: 1;
+      }
+    }
   }
 }
 
-.request-privacy__link {
-  color: var(--main-accent-color);
-  margin-left: 2px;
+.checked-icon-container {
+  display: inline-block;
+  padding-top: 5px;
+  margin-right: 5px;
 }
 .request-privacy__icon {
-  position: relative;
-  top: 2px;
+  // position: relative;
+  // top: 2px;
 
   opacity: 1;
 
@@ -218,9 +228,9 @@
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.request-privacy__checked {
-  position: absolute;
-  top: 2px;
+.checkbox-checked-icon {
+  // position: absolute;
+  // top: 2px;
 
   width: 16px;
   height: 15px;
@@ -230,6 +240,11 @@
   opacity: 0;
 
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.request-privacy__link {
+  color: var(--main-accent-color);
+  margin-left: 2px;
 }
 
 .request-form__button {

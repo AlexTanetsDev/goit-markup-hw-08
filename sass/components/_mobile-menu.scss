@@ -51,7 +51,6 @@
     pointer-events: all;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 
     ~ .page-header__logo {
       display: none;
@@ -88,6 +87,10 @@
     color: var(--main-accent-color);
   }
 }
+.mobile-contacts-group {
+  margin-top: 250px;
+}
+
 .mobile-contacts {
   display: flex;
   flex-direction: column;

@@ -62,7 +62,7 @@
   }
 
   @media screen and (min-width: 480px) {
-    max-width: 480px;
+    max-width: 482px;
     margin: 0 auto;
   }
 }
@@ -71,6 +71,10 @@
   display: flex;
   flex-direction: column;
   gap: 32px;
+
+  @media screen and (max-width: 350px) {
+    gap: 25px;
+  }
 }
 
 .mobile-nav__link {
@@ -86,9 +90,17 @@
   &:focus {
     color: var(--main-accent-color);
   }
+
+  @media screen and (max-width: 350px) {
+    font-size: 35px;
+  }
 }
+
 .mobile-contacts-group {
   margin-top: 250px;
+  @media screen and (max-width: 350px) {
+    margin-top: 200px;
+  }
 }
 
 .mobile-contacts {

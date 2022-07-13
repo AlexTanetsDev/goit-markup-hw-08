@@ -298,6 +298,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .hero-section {
+    padding: 200px 0;
     max-width: 1600px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-desk.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-desk.jpg);
@@ -676,6 +677,13 @@ body {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .modal {
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 @media screen and (min-width: 768px) {
   .modal {
@@ -1069,10 +1077,6 @@ body {
   top: -5px;
   right: 0;
   z-index: 3;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin: 0 0 0 auto;
   padding: 0;
   border: none;
   background-color: transparent;
@@ -1094,6 +1098,9 @@ body {
 .menu-button.is-open .menu-button__icon-open {
   display: none;
 }
+.menu-button.is-open ~ .page-header__logo {
+  display: none;
+}
 .menu-button:hover, .menu-button:focus {
   color: var(--main-accent-color);
 }
@@ -1102,12 +1109,13 @@ body {
   position: absolute;
   top: 0;
   left: 0;
+  right: 0;
   z-index: 2;
   display: none;
   pointer-events: none;
   width: 100vw;
   height: 100vh;
-  padding: 48px 0 48px 40px;
+  padding: 48px 0 60px 40px;
   background-color: #fff;
 }
 .mobile-menu.is-open {
@@ -1119,9 +1127,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-.mobile-menu.is-open ~ .page-header__logo {
-  display: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 @media screen and (min-width: 767px) {
   .mobile-menu.is-open {
@@ -1166,15 +1174,6 @@ body {
 @media screen and (max-width: 350px) {
   .mobile-nav__link {
     font-size: 35px;
-  }
-}
-
-.mobile-contacts-group {
-  margin-top: 250px;
-}
-@media screen and (max-width: 350px) {
-  .mobile-contacts-group {
-    margin-top: 200px;
   }
 }
 
